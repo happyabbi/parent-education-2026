@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-07",
+  "region": "竹苗區",
+  "status": "official-source-index; not admission prediction",
+  "sources": [
+    {
+      "id": "115-guide",
+      "year": 115,
+      "type": "official_admissions_guide",
+      "title": "115學年度竹苗區免試入學核定簡章",
+      "url": "https://hhm.entry.edu.tw/NoExamImitate_HM/NoExamImitate/Apps/Page/Public/News.aspx?SEQNO=11",
+      "verified": "official announcement",
+      "notes": "招生管道、招生校科與名額、超額比序及時程；校科逐筆名額尚未匯入"
+    },
+    {
+      "id": "115-guide-pdf",
+      "year": 115,
+      "type": "guide_pdf",
+      "title": "115學年度竹苗區免試入學簡章 PDF",
+      "url": "https://www.kfsh.hc.edu.tw/uploads/article/19436/20260118133940.pdf",
+      "verified": "published PDF"
+    },
+    {
+      "id": "117-announcement",
+      "year": 117,
+      "type": "rule_announcement",
+      "title": "117學年度竹苗區比序項目採計方式預告",
+      "url": "https://www.hc.edu.tw/edub/upload/%E9%99%84%E4%BB%B62_%E9%A0%90%E5%91%8A%E3%80%8C117%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AB%B9%E8%8B%97%E5%8D%80%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E5%85%8D%E8%A9%A6%E5%85%A5%E5%AD%B8%E6%AF%94%E5%BA%8F%E9%A0%85%E7%9B%AE%E6%8E%A1%E8%A8%88%E6%96%B9%E5%BC%8F%E3%80%8D20251201163612.pdf",
+      "verified": "official government PDF",
+      "notes": "117學年度起適用；須以屆時正式簡章複核"
+    },
+    {
+      "id": "115-seats",
+      "year": 115,
+      "type": "actual_seats_announcement",
+      "title": "國教署115學年度實際招生名額及個人序位區間公告",
+      "url": "https://www.k12ea.gov.tw/Tw/News/K12eaNewsDetail?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&id=684369e3-3369-42c1-8d17-d31b88b1a5fe",
+      "verified": "official government announcement",
+      "notes": "全國免試實際招生名額153595；非竹苗區單獨數字"
+    },
+    {
+      "id": "115-outcomes",
+      "year": 115,
+      "type": "placement_outcomes",
+      "title": "苗栗縣政府115學年度竹苗區分發結果",
+      "url": "https://www.miaoli.gov.tw/News_Content2.aspx?n=285&s=971777",
+      "verified": "official county announcement"
+    }
+  ],
+  "rules": {
+    "115": {
+      "status": "official",
+      "tieBreakOrder": [
+        "總積分",
+        "均衡發展總積分",
+        "扶助弱勢積分",
+        "志願序位積分",
+        "多元學習表現總積分",
+        "教育會考總積分",
+        "教育會考A加號總數",
+        "教育會考B加號總數",
+        "國文科積分",
+        "數學科積分",
+        "英語科積分",
+        "社會科積分",
+        "自然科積分",
+        "寫作測驗級分",
+        "國文科標示",
+        "數學科標示",
+        "英語科標示",
+        "社會科標示",
+        "自然科標示"
+      ],
+      "sourceId": "115-guide-pdf"
+    },
+    "117": {
+      "status": "announced; reconfirm with final guide",
+      "tieBreakOrder": [
+        "總積分",
+        "均衡發展總積分",
+        "志願序位積分",
+        "多元學習表現總積分",
+        "教育會考總積分",
+        "教育會考含寫作測驗等級標示總點數",
+        "國文科積分",
+        "數學科積分",
+        "英語科積分",
+        "社會科積分",
+        "自然科積分",
+        "寫作測驗級分",
+        "國文科標示點數",
+        "數學科標示點數",
+        "英語科標示點數",
+        "社會科標示點數",
+        "自然科標示點數"
+      ],
+      "examGradePoints": {
+        "A++": 7,
+        "A+": 6,
+        "A": 5,
+        "B++": 4,
+        "B+": 3,
+        "B": 2,
+        "C": 1
+      },
+      "writingPoints": {
+        "0": 0,
+        "1": 0.1,
+        "2": 0.2,
+        "3": 0.4,
+        "4": 0.6,
+        "5": 0.8,
+        "6": 1
+      },
+      "sourceId": "117-announcement"
+    }
+  },
+  "outcomes": {
+    "115": {
+      "regionApplicants": 10436,
+      "regionAdmitted": 10417,
+      "miaoliApplicants": 2606,
+      "miaoliAdmitted": 2604,
+      "sourceId": "115-outcomes"
+    }
+  },
+  "missing": [
+    "校科招生名額逐筆資料",
+    "學校年度錄取門檻（官方未必公開）",
+    "校科歷史最低序位之可驗證來源",
+    "完整超額比序積分換算與各年度細則",
+    "117學年度正式核定簡章"
+  ]
+}
