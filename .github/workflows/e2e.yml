@@ -26,3 +26,15 @@ jobs:
             playwright-report/
             test-results/
           retention-days: 14
+  quality-gate:
+    name: quality-gate
+    if: always()
+    needs: [playwright]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Require successful E2E suite
+        env:
+          RESULT: ${{ needs.playwright.result }}
+        run: |
+          echo "Playwright result: $RESULT"
+          test "$RESULT" = "success"
